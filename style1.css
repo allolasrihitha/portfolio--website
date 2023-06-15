@@ -1,0 +1,155 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    position:fixed;
+    width:100%;
+    padding: 15px 0;
+    background: black;
+}
+.navbar .main{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.main{
+    max-width: 1300px;
+    padding: 0 0px;
+    margin:auto;
+}
+.navbar .logo a{
+    font-size:30px;
+    color:white;
+    font-weight:600;
+}
+.navbar .menu li{
+    list-style: none;
+    display:inline;
+}
+.navbar.sticky{
+    padding: 10px 0;
+    background-color: gray;
+}
+.about{
+    height: 100%;
+    background-color: black;
+    padding-bottom: 300px;
+}
+.navbar .menu li a{
+    padding-left: 20px;
+    padding-right: 20px;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left:55px;
+    text-decoration: none;
+    transition: color 0.9s ease;
+}
+.navbar .menu li a:hover{
+    background-color: crimson;
+    color:black;
+}
+.menu-btn{
+    color:white;
+    cursor:pointer;
+    font-size: 23px;
+    line-height: 5px;
+    display: none;
+}
+.home{
+    color:white;
+    background: url("C:\Users\SRIHITHA\Pictures\Camera Roll\mine.jpg");
+    background-color:black;
+}
+.image{
+    padding-top: 60px;
+    padding-right: 40px;
+    float: right;
+    height:80vh;
+}
+p{
+    color:black;
+    padding-left:100px;
+}
+.home{
+    display:flex;
+    color:white
+}
+.home .main{
+    margin: auto 0 auto 40px;
+    background-color:black;
+}
+.h1{
+    padding-left: 100px;
+    padding-top:190px;
+    color:grey;
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+}
+.h2{
+    padding-left: 100px;
+    padding-top:20px;
+    padding-bottom:20px;
+    color:white;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+h1{
+    padding-left: 100px;
+    padding-top:20px;
+    color:white;
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+}
+.h2 button{
+    background-color: crimson;
+    color:wheat;
+    border-radius: 30px;
+}
+/*responsive wmedia query*/
+@media(max-width:792px){
+    .max-width{
+        padding:0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index:999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        text-align: center;
+        position:fixed;
+        height:100vh;
+        width:100%;
+        left:-100%;
+        top:0;
+    }
+    .navbar .menu.active{
+        left:0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin:20px 0;
+        font-size: 25px;
+
+    }
+    /*about me*/
+    .about{
+        background-color: white;
+        color:black;
+    }
+    .textbox .input{
+        height:30px;
+    }
+    
+}
